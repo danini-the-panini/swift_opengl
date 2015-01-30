@@ -13,6 +13,8 @@
 		6515F65B1A7AC326000B7D4A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6515F65A1A7AC326000B7D4A /* Images.xcassets */; };
 		6515F65E1A7AC326000B7D4A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6515F65C1A7AC326000B7D4A /* LaunchScreen.xib */; };
 		6515F66A1A7AC326000B7D4A /* ios_openglTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6515F6691A7AC326000B7D4A /* ios_openglTests.swift */; };
+		6515F6741A7AC544000B7D4A /* GLView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6515F6731A7AC544000B7D4A /* GLView.swift */; };
+		6515F6781A7B822E000B7D4A /* GLViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6515F6771A7B822E000B7D4A /* GLViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,8 @@
 		6515F6631A7AC326000B7D4A /* ios-openglTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ios-openglTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6515F6681A7AC326000B7D4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6515F6691A7AC326000B7D4A /* ios_openglTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ios_openglTests.swift; sourceTree = "<group>"; };
+		6515F6731A7AC544000B7D4A /* GLView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GLView.swift; sourceTree = "<group>"; };
+		6515F6771A7B822E000B7D4A /* GLViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GLViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +87,8 @@
 				6515F65A1A7AC326000B7D4A /* Images.xcassets */,
 				6515F65C1A7AC326000B7D4A /* LaunchScreen.xib */,
 				6515F6511A7AC326000B7D4A /* Supporting Files */,
+				6515F6731A7AC544000B7D4A /* GLView.swift */,
+				6515F6771A7B822E000B7D4A /* GLViewController.swift */,
 			);
 			path = "ios-opengl";
 			sourceTree = "<group>";
@@ -212,8 +218,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6515F6741A7AC544000B7D4A /* GLView.swift in Sources */,
 				6515F6561A7AC326000B7D4A /* ViewController.swift in Sources */,
 				6515F6541A7AC326000B7D4A /* AppDelegate.swift in Sources */,
+				6515F6781A7B822E000B7D4A /* GLViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
