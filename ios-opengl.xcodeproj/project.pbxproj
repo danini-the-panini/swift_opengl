@@ -15,6 +15,14 @@
 		6515F66A1A7AC326000B7D4A /* ios_openglTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6515F6691A7AC326000B7D4A /* ios_openglTests.swift */; };
 		6515F6741A7AC544000B7D4A /* GLView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6515F6731A7AC544000B7D4A /* GLView.swift */; };
 		6515F6781A7B822E000B7D4A /* GLViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6515F6771A7B822E000B7D4A /* GLViewController.swift */; };
+		6515F6841A7BAE9A000B7D4A /* WavefrontMesh.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6515F6831A7BAE9A000B7D4A /* WavefrontMesh.swift */; };
+		6515F6861A7BB25F000B7D4A /* StreamReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6515F6851A7BB25F000B7D4A /* StreamReader.swift */; };
+		6515F6881A7BD4CF000B7D4A /* Shader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6515F6871A7BD4CF000B7D4A /* Shader.swift */; };
+		6515F69B1A7BF08D000B7D4A /* fragment.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 6515F6971A7BF08D000B7D4A /* fragment.glsl */; };
+		6515F69C1A7BF08D000B7D4A /* monkey.obj in Resources */ = {isa = PBXBuildFile; fileRef = 6515F6981A7BF08D000B7D4A /* monkey.obj */; };
+		6515F69D1A7BF08D000B7D4A /* sphere.obj in Resources */ = {isa = PBXBuildFile; fileRef = 6515F6991A7BF08D000B7D4A /* sphere.obj */; };
+		6515F69E1A7BF08D000B7D4A /* vertex.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 6515F69A1A7BF08D000B7D4A /* vertex.glsl */; };
+		6515F6A11A7F4C39000B7D4A /* OpenGLHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 6515F6A01A7F4C39000B7D4A /* OpenGLHelper.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +48,16 @@
 		6515F6691A7AC326000B7D4A /* ios_openglTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ios_openglTests.swift; sourceTree = "<group>"; };
 		6515F6731A7AC544000B7D4A /* GLView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GLView.swift; sourceTree = "<group>"; };
 		6515F6771A7B822E000B7D4A /* GLViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GLViewController.swift; sourceTree = "<group>"; };
+		6515F6831A7BAE9A000B7D4A /* WavefrontMesh.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WavefrontMesh.swift; sourceTree = "<group>"; };
+		6515F6851A7BB25F000B7D4A /* StreamReader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StreamReader.swift; sourceTree = "<group>"; };
+		6515F6871A7BD4CF000B7D4A /* Shader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Shader.swift; sourceTree = "<group>"; };
+		6515F6971A7BF08D000B7D4A /* fragment.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = fragment.glsl; sourceTree = "<group>"; };
+		6515F6981A7BF08D000B7D4A /* monkey.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = monkey.obj; sourceTree = "<group>"; };
+		6515F6991A7BF08D000B7D4A /* sphere.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sphere.obj; sourceTree = "<group>"; };
+		6515F69A1A7BF08D000B7D4A /* vertex.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = vertex.glsl; sourceTree = "<group>"; };
+		6515F69F1A7F4C39000B7D4A /* ios-opengl-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ios-opengl-Bridging-Header.h"; sourceTree = "<group>"; };
+		6515F6A01A7F4C39000B7D4A /* OpenGLHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpenGLHelper.m; sourceTree = "<group>"; };
+		65BA47501A7F4CB500832D06 /* OpenGLHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OpenGLHelper.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +99,10 @@
 		6515F6501A7AC326000B7D4A /* ios-opengl */ = {
 			isa = PBXGroup;
 			children = (
+				6515F6971A7BF08D000B7D4A /* fragment.glsl */,
+				6515F6981A7BF08D000B7D4A /* monkey.obj */,
+				6515F6991A7BF08D000B7D4A /* sphere.obj */,
+				6515F69A1A7BF08D000B7D4A /* vertex.glsl */,
 				6515F6531A7AC326000B7D4A /* AppDelegate.swift */,
 				6515F6551A7AC326000B7D4A /* ViewController.swift */,
 				6515F6571A7AC326000B7D4A /* Main.storyboard */,
@@ -89,6 +111,12 @@
 				6515F6511A7AC326000B7D4A /* Supporting Files */,
 				6515F6731A7AC544000B7D4A /* GLView.swift */,
 				6515F6771A7B822E000B7D4A /* GLViewController.swift */,
+				6515F6831A7BAE9A000B7D4A /* WavefrontMesh.swift */,
+				6515F6851A7BB25F000B7D4A /* StreamReader.swift */,
+				6515F6871A7BD4CF000B7D4A /* Shader.swift */,
+				6515F6A01A7F4C39000B7D4A /* OpenGLHelper.m */,
+				6515F69F1A7F4C39000B7D4A /* ios-opengl-Bridging-Header.h */,
+				65BA47501A7F4CB500832D06 /* OpenGLHelper.h */,
 			);
 			path = "ios-opengl";
 			sourceTree = "<group>";
@@ -162,6 +190,8 @@
 		6515F6461A7AC326000B7D4A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftMigration = 0710;
+				LastSwiftUpdateCheck = 0710;
 				LastUpgradeCheck = 0610;
 				ORGANIZATIONNAME = "Daniel Smith";
 				TargetAttributes = {
@@ -199,7 +229,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				6515F6591A7AC326000B7D4A /* Main.storyboard in Resources */,
+				6515F69B1A7BF08D000B7D4A /* fragment.glsl in Resources */,
+				6515F69C1A7BF08D000B7D4A /* monkey.obj in Resources */,
 				6515F65E1A7AC326000B7D4A /* LaunchScreen.xib in Resources */,
+				6515F69E1A7BF08D000B7D4A /* vertex.glsl in Resources */,
+				6515F69D1A7BF08D000B7D4A /* sphere.obj in Resources */,
 				6515F65B1A7AC326000B7D4A /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -218,9 +252,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6515F6881A7BD4CF000B7D4A /* Shader.swift in Sources */,
+				6515F6861A7BB25F000B7D4A /* StreamReader.swift in Sources */,
 				6515F6741A7AC544000B7D4A /* GLView.swift in Sources */,
+				6515F6841A7BAE9A000B7D4A /* WavefrontMesh.swift in Sources */,
 				6515F6561A7AC326000B7D4A /* ViewController.swift in Sources */,
 				6515F6541A7AC326000B7D4A /* AppDelegate.swift in Sources */,
+				6515F6A11A7F4C39000B7D4A /* OpenGLHelper.m in Sources */,
 				6515F6781A7B822E000B7D4A /* GLViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -346,9 +384,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "ios-opengl/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ios-opengl/ios-opengl-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -356,9 +397,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "ios-opengl/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ios-opengl/ios-opengl-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -415,6 +458,7 @@
 				6515F66F1A7AC326000B7D4A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6515F6701A7AC326000B7D4A /* Build configuration list for PBXNativeTarget "ios-openglTests" */ = {
 			isa = XCConfigurationList;
@@ -423,6 +467,7 @@
 				6515F6721A7AC326000B7D4A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
